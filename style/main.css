@@ -120,4 +120,56 @@ body h1 {
 
 .key[data-key="82"] {
   margin-left: 65px;
+}
+
+span:nth-of-type(1) {
+  transition-delay: 50ms;
+}
+
+span:nth-of-type(2) {
+  transition-delay: 100ms;
+}
+
+span:nth-of-type(3) {
+  transition-delay: 150ms;
+}
+
+span:nth-of-type(4) {
+  transition-delay: 200ms;
+}
+
+span:nth-of-type(5) {
+  transition-delay: 250ms;
+}
+
+span:nth-of-type(6) {
+  transition-delay: 300ms;
+}
+
+span:nth-of-type(7) {
+  transition-delay: 350ms;
+}
+
+span:nth-of-type(8) {
+  transition-delay: 400ms;
+}
+
+span:nth-of-type(9) {
+  transition-delay: 450ms;
+}
+
+span:nth-of-type(10) {
+  transition-delay: 500ms;
+}
+
+span:nth-of-type(11) {
+  transition-delay: 550ms;
+}
+
+span:nth-of-type(12) {
+  transition-delay: 600ms;
+}
+
+span:nth-of-type(13) {
+  transition-delay: 650ms;
 }/*# sourceMappingURL=main.css.map */

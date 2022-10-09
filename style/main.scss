@@ -123,8 +123,8 @@ body {
   margin-left: 65px;
 }
 
-// @for $i from 1 to 14 {
-//   .key-spn:nth-of-type(#{$i}) {
-//     transition-delay: $i * 50ms;
-//   }
-// }
+@for $i from 1 to 14 {
+  span:nth-of-type(#{$i}) {
+    transition-delay: $i * 50ms;
+  }
+}

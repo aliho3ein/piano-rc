@@ -3,31 +3,33 @@ let keys = document.querySelectorAll(".key");
 let span = document.querySelectorAll(".key-spn");
 let sharps = document.querySelectorAll(".sharp");
 
-function playing(e) {
-  let key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-  if (!key) return;
-  let cl = key.getAttribute("data-note");
-  letsPlay(key.getAttribute("data-note"));
-}
-
-window.addEventListener("keydown", playing);
-
-function rmKey() {
-  this.classList.remove("playing");
-}
-keys.forEach((element) => element.addEventListener("transitionend", rmKey));
-
 /* Hover delay */
 span.forEach(function (element, value) {
   element.style = `transition-delay: ${value * 50}ms`;
 });
 
+/* On keydown */
+window.addEventListener("keydown", (e) => {
+  let key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  if (!key) return;
+  letsPlay(key.getAttribute("data-note"));
+});
+
+/* On click  */
 keys.forEach(function (ele) {
   ele.addEventListener("click", function () {
     letsPlay(this.getAttribute("data-note"));
   });
 });
 
+/* Remove Key Effect */
+keys.forEach((element) =>
+  element.addEventListener("transitionend", function () {
+    this.classList.remove("playing");
+  })
+);
+
+/* Play sound */
 function letsPlay(item) {
   note.textContent = item;
   let id = document.querySelector(`.key[data-note="${item}"]`);
