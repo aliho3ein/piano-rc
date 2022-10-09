@@ -121,7 +121,7 @@ body {
 }
 
 // @for $i from 1 to 14 {
-//   .key-spn:nth-child(#{$i}) {
+//   .key-spn:nth-of-type(#{$i}) {
 //     transition-delay: $i * 50ms;
 //   }
 // }

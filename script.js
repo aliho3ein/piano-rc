@@ -3,29 +3,16 @@ let keys = document.querySelectorAll(".key");
 let span = document.querySelectorAll(".key-spn");
 let sharps = document.querySelectorAll(".sharp");
 
-// function rmKey(key) {
-//   key.style.transform = "scale(100%)";
-// }
-
 function playing(e) {
   let key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
   if (!key) return;
   let cl = key.getAttribute("data-note");
-  note.textContent = cl;
-  let sound = document.querySelector(`.sound[data-note="${cl}"]`);
-
-  sound.currentTime = 0;
-  sound.play();
-
-  key.classList.add("playing");
-  // key.style.transform = "scale(97%)";
-  // setInterval(rmKey, 200, key);
+  letsPlay(key.getAttribute("data-note"));
 }
 
 window.addEventListener("keydown", playing);
 
 function rmKey() {
-  // this.style.transform = "scale(100%)";
   this.classList.remove("playing");
 }
 keys.forEach((element) => element.addEventListener("transitionend", rmKey));
@@ -34,3 +21,23 @@ keys.forEach((element) => element.addEventListener("transitionend", rmKey));
 span.forEach(function (element, value) {
   element.style = `transition-delay: ${value * 50}ms`;
 });
+
+keys.forEach(function (ele) {
+  ele.addEventListener("click", function () {
+    letsPlay(this.getAttribute("data-note"));
+  });
+});
+
+function letsPlay(item) {
+  note.textContent = item;
+  let id = document.querySelector(`.key[data-note="${item}"]`);
+  let sound = document.querySelector(`.sound[data-note="${item}"]`);
+  sound.currentTime = 0;
+  sound.play();
+  id.classList.add("playing");
+  // setInterval(removeKey, 200, key);
+}
+
+// function removeKey(key) {
+//   key.style.transform = "scale(100%)";
+// }
