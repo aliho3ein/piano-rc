@@ -30,6 +30,7 @@ body {
   max-width: 880px;
   width: auto;
   color: transparent;
+  display: flex;
   &:hover .key {
     color: black;
   }
@@ -45,10 +46,12 @@ body {
     position: relative;
     height: 98%;
     width: 80px;
-    margin-left: 8px;
+    margin-left: 5px;
     padding-bottom: 2%;
     background: #fff;
     border-radius: 0px 0px 5px 5px;
+    border: 7px outset rgb(228, 221, 221);
+    border-top: none;
     align-items: flex-end;
     justify-content: center;
     color: #000;
@@ -99,25 +102,25 @@ body {
 // }
 
 .key[data-key="80"] {
-  margin-left: 773px;
+  margin-left: 769px;
 }
 .key[data-key="79"] {
-  margin-left: 685px;
+  margin-left: 681px;
 }
 .key[data-key="73"] {
-  margin-left: 510px;
+  margin-left: 506px;
 }
 .key[data-key="85"] {
-  margin-left: 421px;
+  margin-left: 418px;
 }
 .key[data-key="90"] {
-  margin-left: 331px;
+  margin-left: 329px;
 }
 .key[data-key="84"] {
-  margin-left: 158px;
+  margin-left: 155px;
 }
 .key[data-key="82"] {
-  margin-left: 68px;
+  margin-left: 65px;
 }
 
 // @for $i from 1 to 14 {
