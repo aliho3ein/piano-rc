@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Piano</title>
+    <link rel="shortcut icon" href="music-notes-png.webp" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Keycode -->
+    <h1>Piano Javascript</h1>
+    <span class="note">Let's Play</span>
+    <section class="pnBase">
+      <div data-note="C" data-key="65" class="key">
+        <span class="key-spn">A</span>
+      </div>
+      <div data-note="C#" data-key="82" class="key sharp s1">
+        <span class="key-spn">R</span>
+      </div>
+      <div data-note="D" data-key="83" class="key">
+        <span class="key-spn">S</span>
+      </div>
+      <div data-note="D#" data-key="84" class="key sharp s2">
+        <span class="key-spn">T</span>
+      </div>
+      <div data-note="E" data-key="68" class="key">
+        <span class="key-spn">D</span>
+      </div>
+      <div data-note="F" data-key="70" class="key">
+        <span class="key-spn">F</span>
+      </div>
+      <div data-note="F#" data-key="90" class="key sharp s3">
+        <span class="key-spn">Z</span>
+      </div>
+      <div data-note="G" data-key="71" class="key">
+        <span class="key-spn">G</span>
+      </div>
+      <div data-note="G#" data-key="85" class="key sharp s4">
+        <span class="key-spn">U</span>
+      </div>
+      <div data-note="A" data-key="72" class="key">
+        <span class="key-spn">H</span>
+      </div>
+      <div data-note="A#" data-key="73" class="key sharp s5">
+        <span class="key-spn">I</span>
+      </div>
+      <div data-note="B" data-key="74" class="key">
+        <span class="key-spn">J</span>
+      </div>
+      <div data-note="C" data-key="75" class="key">
+        <span class="key-spn">K</span>
+      </div>
+      <div data-note="C#" data-key="79" class="key sharp s6">
+        <span class="key-spn">O</span>
+      </div>
+      <div data-note="D" data-key="76" class="key">
+        <span class="key-spn">L</span>
+      </div>
+      <div data-note="D#" data-key="80" class="key sharp s7">
+        <span class="key-spn">P</span>
+      </div>
+      <div data-note="E" data-key="192" class="key">
+        <span class="key-spn">Ö</span>
+      </div>
+    </section>
+    <audio controls class="sound" data-note="A">
+      <source src="static/040.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="A#">
+      <source src="static/052.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="E#">
+      <source src="static/041.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="B">
+      <source src="static/042.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="C">
+      <source src="static/043.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="C#">
+      <source src="static/045.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="D">
+      <source src="static/044.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="D#">
+      <source src="static/046.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="E">
+      <source src="static/047.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="F">
+      <source src="static/048.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="F#">
+      <source src="static/049.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="G">
+      <source src="static/050.wav" type="audio/mpeg" />
+    </audio>
+    <audio controls class="sound" data-note="G#">
+      <source src="static/051.wav" type="audio/mpeg" />
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
