@@ -9,7 +9,7 @@ audio {
 }
 
 body {
-  background-color: #000;
+  background: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,7 +69,6 @@ body {
     display: flex;
     border-radius: 0px 0px 5px 5px;
     background: linear-gradient(to top, #333, #000);
-    //  black;
     border: 5px outset gray;
     border-top: none;
     z-index: 2;
@@ -132,3 +131,12 @@ body {
 //     transition-delay: $i * 50ms;
 //   }
 // }
+
+#copyR {
+  font-size: 1rem;
+  cursor: pointer;
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+}

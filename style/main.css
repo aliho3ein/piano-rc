@@ -10,7 +10,7 @@ audio {
 }
 
 body {
-  background-color: #000;
+  background: #000;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,4 +124,13 @@ body h1 {
 
 .key[data-key=r] {
   margin-left: 65px;
+}
+
+#copyR {
+  font-size: 1rem;
+  cursor: pointer;
+}
+#copyR a {
+  color: #333;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
