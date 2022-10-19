@@ -27,8 +27,7 @@ body {
 
 .pnBase {
   height: 40vh;
-  max-width: 880px;
-  width: auto;
+  width: 880px;
   color: transparent;
   display: flex;
   &:hover .key {
@@ -57,6 +56,7 @@ body {
     color: #000;
     cursor: pointer;
     box-sizing: content-box;
+    user-select: none;
     transition: ease-out 0.1s;
     &:active {
       background-color: rgb(203, 190, 190);
@@ -97,44 +97,38 @@ body {
   margin-top: -0.3%;
 }
 
-// @for $var from 1 to 8 {
-//   .s#{$var} {
-//     margin-left: $var * 68px;
-//   }
-// }
-
-.key[data-key="80"] {
+.key[data-key="p"] {
   margin-left: 769px;
 }
-.key[data-key="79"] {
+
+.key[data-key="o"] {
   margin-left: 681px;
 }
-.key[data-key="73"] {
+
+.key[data-key="i"] {
   margin-left: 506px;
 }
-.key[data-key="85"] {
+
+.key[data-key="u"] {
   margin-left: 418px;
 }
-.key[data-key="90"] {
+
+.key[data-key="z"] {
   margin-left: 329px;
 }
-.key[data-key="84"] {
+
+.key[data-key="t"] {
   margin-left: 155px;
 }
-.key[data-key="82"] {
+
+.key[data-key="r"] {
   margin-left: 65px;
 }
 
-// @for $i from 1 to 14 {
-//   span:nth-of-type(#{$i}) {
-//     transition-duration: 0.5s;
+// @for $i from 1 through 14 {
+//   .key-spn:nth-of-type(#{$i}) {
+//     transition-duration: $i * 50ms;
 //     transition-property: all;
 //     transition-delay: $i * 50ms;
 //   }
-// }
-
-// .key-spn:nth-of-type(7) {
-//   transition-duration: 0.5s;
-//   transition-property: all;
-//   transition-delay: 3s;
 // }

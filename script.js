@@ -6,11 +6,12 @@ let sharps = document.querySelectorAll(".sharp");
 /* Hover delay */
 span.forEach(function (element, value) {
   element.style = `transition-delay: ${value * 50}ms`;
+  console.log(element, value);
 });
 
 /* On keydown */
 window.addEventListener("keydown", (e) => {
-  let key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+  let key = document.querySelector(`.key[data-key="${e.key}"]`);
   if (!key) return;
   letsPlay(key.getAttribute("data-note"));
 });
